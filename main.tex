@@ -14,6 +14,35 @@
 % 论文基本配置，加载宏包等全局配置
 \input{setup}
 
+% =============================
+% 开始设置中文字体使用方正字体。
+% 当 documentclass[cjk-font=none] 设置为 none 时需要配置。
+% 设置字体路径
+% 方正免费字体：包括五种字体：方正黑体、方正书宋、方正仿宋、方正楷体、 方正甲骨文。针对“商业发布”这种使用方式免费。
+% ref. https://www.foundertype.com/index.php/About/powerbus.html
+% 文中提到的字体的GBK版本分别为 FZHTK, FZSSK, FZFSK, FZKTK，从方正官网下载之后上传到 /fonts 目录即可
+\defaultfontfeatures{Path=fonts/}
+
+% 设置中文字体
+\setCJKmainfont[
+  BoldFont      = FZHTK.TTF,
+  ItalicFont    = FZKTK.TTF
+]{FZSSK.TTF}
+\setCJKsansfont{FZHTK.TTF}
+\setCJKmonofont{FZFSK.TTF}
+
+\setCJKfamilyfont{zhsong}{FZSSK.TTF}
+\setCJKfamilyfont{zhhei}{FZHTK.TTF}
+\setCJKfamilyfont{zhkai}{FZKTK.TTF}
+\setCJKfamilyfont{zhfs}{FZFSK.TTF}
+
+\newcommand*{\songti}{\CJKfamily{zhsong}}
+\newcommand*{\heiti}{\CJKfamily{zhhei}}
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}
+\newcommand*{\fangsong}{\CJKfamily{zhfs}}
+% 结束设置中文字体使用方正字体。
+% =============================
+
 \begin{document}
 
 %TC:ignore
