@@ -1,3 +1,7 @@
+基于 https://github.com/sjtug/SJTUThesis (当前 v2.0.3)，根据上海交通大学电子信息与电气工程学院（SJTU SEIEEE）工程管理硕士 (MEM) 的论文要求，做尽量少的修改。
+
+仅在交大 LaTeX 文档助手 （https://latex.sjtu.edu.cn/）进行验证。
+
 # SJTUThesis 示例模板
 
 [![Build Status](https://github.com/sjtug/SJTUThesis/actions/workflows/build.yml/badge.svg)](https://github.com/sjtug/SJTUThesis/actions)
